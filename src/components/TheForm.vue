@@ -1,4 +1,4 @@
-<template>
+`<template>
   <form>
     <div class="form-control">
       <label for="user-name">Your Name</label>
@@ -54,16 +54,13 @@
 
 <style scoped>
 form {
-  margin: 2rem auto;
-  max-width: 40rem;
-  border-radius: 12px;
+  @apply my-8 mx-auto max-w-2xl rounded-xl p-4 ;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
-  padding: 2rem;
   background-color: #ffffff;
 }
 
 .form-control {
-  margin: 0.5rem 0;
+  @apply my-2 mx-0
 }
 
 label {
@@ -71,16 +68,13 @@ label {
 }
 
 h2 {
-  font-size: 1rem;
-  margin: 0.5rem 0;
+  @apply text-base my-2 mx-0
 }
 
 input,
 select {
-  display: block;
-  width: 100%;
   font: inherit;
-  margin-top: 0.5rem;
+  @apply block w-full  mt-2
 }
 
 select {
@@ -104,9 +98,7 @@ button {
   border: 1px solid #0076bb;
   background-color: #0076bb;
   color: white;
-  cursor: pointer;
-  padding: 0.75rem 2rem;
-  border-radius: 30px;
+  @apply py-3 px-4 rounded-3xl cursor-pointer
 }
 
 button:hover,
