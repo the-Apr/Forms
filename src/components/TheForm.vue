@@ -4,10 +4,12 @@
       <label for="user-name">Your Name</label>
       <input id="user-name" name="user-name" type="text" />
     </div>
+
     <div class="form-control">
       <label for="age">Your Age (Years)</label>
       <input id="age" name="age" type="number" />
     </div>
+
     <div class="form-control">
       <label for="referrer">How did you hear about us?</label>
       <select id="referrer" name="referrer">
@@ -16,6 +18,7 @@
         <option value="newspaper">Newspaper</option>
       </select>
     </div>
+
     <div class="form-control">
       <h2>What are you interested in?</h2>
       <div>
@@ -31,6 +34,7 @@
         <label for="interest-nothing">Nothing</label>
       </div>
     </div>
+
     <div class="form-control">
       <h2>How do you learn?</h2>
       <div>
@@ -46,6 +50,7 @@
         <label for="how-other">Other</label>
       </div>
     </div>
+
     <div>
       <button>Save Data</button>
     </div>
@@ -60,7 +65,7 @@ form {
 }
 
 .form-control {
-  @apply my-2 mx-0
+  @apply my-6 mx-0
 }
 
 label {
@@ -68,13 +73,18 @@ label {
 }
 
 h2 {
-  @apply text-base my-2 mx-0
+  @apply text-base my-2 mx-0 font-bold
 }
 
 input,
 select {
   font: inherit;
-  @apply block w-full  mt-2
+  @apply block w-full  mt-2 py-1 px-2
+}
+
+input,
+select{
+  @apply border-solid border-2 border-blue-800;
 }
 
 select {
@@ -98,7 +108,7 @@ button {
   border: 1px solid #0076bb;
   background-color: #0076bb;
   color: white;
-  @apply py-3 px-4 rounded-3xl cursor-pointer
+  @apply py-1 px-4 rounded-xl cursor-pointer
 }
 
 button:hover,
